@@ -14,19 +14,20 @@ class Unite
     private ?int $id = null;
 
     #[ORM\Column(nullable: true)]
-    private ?int $unite = null;
+    private ?float $unite = null;
+
 
     public function getId(): ?int
     {
         return $this->id;
     }
 
-    public function getUnite(): ?int
+    public function getUnite(): ?float
     {
         return $this->unite;
     }
 
-    public function setUnite(?int $unite): static
+    public function setUnite(?float $unite): static
     {
         $this->unite = $unite;
 
