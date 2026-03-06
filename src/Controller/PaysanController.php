@@ -11,7 +11,7 @@ final class PaysanController extends AbstractController
     #[Route('/paysan', name: 'app_paysan')]
     public function index(): Response
     {
-        return $this->render('base/index.html.twig');
+        return $this->render('paysan/index.html.twig');
     }
 
     #[Route('/contact', name: 'app_contact')]
