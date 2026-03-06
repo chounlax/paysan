@@ -19,6 +19,7 @@ class Unite
     private ?float $unite = null;
 
     /**
+<<<<<<< HEAD
      * @var Collection<int, Elementschimiques>
      */
     #[ORM\OneToMany(targetEntity: Elementschimiques::class, mappedBy: 'unite')]
@@ -34,6 +35,16 @@ class Unite
     {
         $this->elementschimiques = new ArrayCollection();
         $this->elementchimique = new ArrayCollection();
+=======
+     * @var Collection<int, Engrais>
+     */
+    #[ORM\OneToMany(targetEntity: Engrais::class, mappedBy: 'unite', orphanRemoval: true)]
+    private Collection $engrais;
+
+    public function __construct()
+    {
+        $this->engrais = new ArrayCollection();
+>>>>>>> 82465f98a1fb2efbc744f9118b8b13d49e0a0d40
     }
 
 
@@ -55,6 +66,7 @@ class Unite
     }
 
     /**
+<<<<<<< HEAD
      * @return Collection<int, Elementschimiques>
      */
     public function getElementschimiques(): Collection
@@ -67,11 +79,26 @@ class Unite
         if (!$this->elementschimiques->contains($elementschimique)) {
             $this->elementschimiques->add($elementschimique);
             $elementschimique->setUnite($this);
+=======
+     * @return Collection<int, Engrais>
+     */
+    public function getEngrais(): Collection
+    {
+        return $this->engrais;
+    }
+
+    public function addEngrai(Engrais $engrai): static
+    {
+        if (!$this->engrais->contains($engrai)) {
+            $this->engrais->add($engrai);
+            $engrai->setUnite($this);
+>>>>>>> 82465f98a1fb2efbc744f9118b8b13d49e0a0d40
         }
 
         return $this;
     }
 
+<<<<<<< HEAD
     public function removeElementschimique(Elementschimiques $elementschimique): static
     {
         if ($this->elementschimiques->removeElement($elementschimique)) {
@@ -108,6 +135,14 @@ class Unite
             // set the owning side to null (unless already changed)
             if ($elementchimique->getUnite() === $this) {
                 $elementchimique->setUnite(null);
+=======
+    public function removeEngrai(Engrais $engrai): static
+    {
+        if ($this->engrais->removeElement($engrai)) {
+            // set the owning side to null (unless already changed)
+            if ($engrai->getUnite() === $this) {
+                $engrai->setUnite(null);
+>>>>>>> 82465f98a1fb2efbc744f9118b8b13d49e0a0d40
             }
         }
 
