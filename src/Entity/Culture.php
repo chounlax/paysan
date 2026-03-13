@@ -25,11 +25,11 @@ class Culture
 
     #[ORM\ManyToOne(inversedBy: 'cultures')]
     #[ORM\JoinColumn(nullable: false)]
-    private ?parcelle $noparcelle = null;
+    private ?Parcelle $noparcelle = null;
 
     #[ORM\ManyToOne(inversedBy: 'cultures')]
     #[ORM\JoinColumn(nullable: false)]
-    private ?production $production = null;
+    private ?Production $production = null;
 
     public function getId(): ?int
     {
