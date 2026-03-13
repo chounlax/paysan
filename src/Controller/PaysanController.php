@@ -8,15 +8,10 @@ use Symfony\Component\Routing\Attribute\Route;
 
 final class PaysanController extends AbstractController
 {
-    #[Route('/', name: 'app_paysan')]
+    #[Route('', name: 'app_paysan')]
     public function index(): Response
     {
         return $this->render('paysan/index.html.twig');
     }
 
-    #[Route('/contact', name: 'app_contact')]
-    public function contact(): Response
-    {
-        return $this->render('base/contact.html.twig');
-    }
 }

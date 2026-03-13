@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b44a1b6e495900be3fd0bf0cec147d73",
+    "content-hash": "ec66a17ee881cf4cf63d621389a221b4",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -2043,16 +2043,16 @@
         },
         {
             "name": "symfony/dotenv",
-            "version": "v6.4.30",
+            "version": "v6.4.35",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dotenv.git",
-                "reference": "924edbc9631b75302def0258ed1697948b17baf6"
+                "reference": "148138ead5d7bb582e93a9cc19b134b42a370365"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dotenv/zipball/924edbc9631b75302def0258ed1697948b17baf6",
-                "reference": "924edbc9631b75302def0258ed1697948b17baf6",
+                "url": "https://api.github.com/repos/symfony/dotenv/zipball/148138ead5d7bb582e93a9cc19b134b42a370365",
+                "reference": "148138ead5d7bb582e93a9cc19b134b42a370365",
                 "shasum": ""
             },
             "require": {
@@ -2097,7 +2097,7 @@
                 "environment"
             ],
             "support": {
-                "source": "https://github.com/symfony/dotenv/tree/v6.4.30"
+                "source": "https://github.com/symfony/dotenv/tree/v6.4.35"
             },
             "funding": [
                 {
@@ -2117,7 +2117,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-11-14T17:33:48+00:00"
+            "time": "2026-02-26T10:15:49+00:00"
         },
         {
             "name": "symfony/error-handler",
@@ -4260,16 +4260,16 @@
         },
         {
             "name": "symfony/twig-bridge",
-            "version": "v6.4.34",
+            "version": "v6.4.35",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/twig-bridge.git",
-                "reference": "5169074f4a88dfb02eeccddaba78edfdf212a9b2"
+                "reference": "352acf608d1c9c00692fc3bba9f445176c14ce0f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/twig-bridge/zipball/5169074f4a88dfb02eeccddaba78edfdf212a9b2",
-                "reference": "5169074f4a88dfb02eeccddaba78edfdf212a9b2",
+                "url": "https://api.github.com/repos/symfony/twig-bridge/zipball/352acf608d1c9c00692fc3bba9f445176c14ce0f",
+                "reference": "352acf608d1c9c00692fc3bba9f445176c14ce0f",
                 "shasum": ""
             },
             "require": {
@@ -4349,7 +4349,7 @@
             "description": "Provides integration for Twig with various Symfony components",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/twig-bridge/tree/v6.4.34"
+                "source": "https://github.com/symfony/twig-bridge/tree/v6.4.35"
             },
             "funding": [
                 {
@@ -4369,7 +4369,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-02-23T18:17:33+00:00"
+            "time": "2026-03-04T15:30:31+00:00"
         },
         {
             "name": "symfony/twig-bundle",
@@ -5005,6 +5005,92 @@
                 }
             ],
             "time": "2026-01-23T16:02:12+00:00"
+        },
+        {
+            "name": "symfony/web-profiler-bundle",
+            "version": "v6.4.35",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/web-profiler-bundle.git",
+                "reference": "ae7fc9802c6eef1fa5078efad3c72db836ffcb9d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/web-profiler-bundle/zipball/ae7fc9802c6eef1fa5078efad3c72db836ffcb9d",
+                "reference": "ae7fc9802c6eef1fa5078efad3c72db836ffcb9d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1",
+                "symfony/config": "^5.4|^6.0|^7.0",
+                "symfony/framework-bundle": "^6.4|^7.0",
+                "symfony/http-kernel": "^6.4|^7.0",
+                "symfony/routing": "^5.4|^6.0|^7.0",
+                "symfony/twig-bundle": "^5.4|^6.0",
+                "twig/twig": "^2.13|^3.0.4"
+            },
+            "conflict": {
+                "symfony/form": "<5.4",
+                "symfony/mailer": "<5.4",
+                "symfony/messenger": "<5.4",
+                "symfony/twig-bundle": ">=7.0"
+            },
+            "require-dev": {
+                "symfony/browser-kit": "^5.4|^6.0|^7.0",
+                "symfony/console": "^5.4|^6.0|^7.0",
+                "symfony/css-selector": "^5.4|^6.0|^7.0",
+                "symfony/stopwatch": "^5.4|^6.0|^7.0"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Bundle\\WebProfilerBundle\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides a development tool that gives detailed information about the execution of any request",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "dev"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/web-profiler-bundle/tree/v6.4.35"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/nicolas-grekas",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2026-03-03T10:22:09+00:00"
         }
     ],
     "aliases": [],
