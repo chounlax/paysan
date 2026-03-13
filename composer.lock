@@ -2043,16 +2043,16 @@
         },
         {
             "name": "symfony/dotenv",
-            "version": "v6.4.30",
+            "version": "v6.4.35",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dotenv.git",
-                "reference": "924edbc9631b75302def0258ed1697948b17baf6"
+                "reference": "148138ead5d7bb582e93a9cc19b134b42a370365"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dotenv/zipball/924edbc9631b75302def0258ed1697948b17baf6",
-                "reference": "924edbc9631b75302def0258ed1697948b17baf6",
+                "url": "https://api.github.com/repos/symfony/dotenv/zipball/148138ead5d7bb582e93a9cc19b134b42a370365",
+                "reference": "148138ead5d7bb582e93a9cc19b134b42a370365",
                 "shasum": ""
             },
             "require": {
@@ -2097,7 +2097,7 @@
                 "environment"
             ],
             "support": {
-                "source": "https://github.com/symfony/dotenv/tree/v6.4.30"
+                "source": "https://github.com/symfony/dotenv/tree/v6.4.35"
             },
             "funding": [
                 {
@@ -2117,7 +2117,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-11-14T17:33:48+00:00"
+            "time": "2026-02-26T10:15:49+00:00"
         },
         {
             "name": "symfony/error-handler",
@@ -4260,16 +4260,16 @@
         },
         {
             "name": "symfony/twig-bridge",
-            "version": "v6.4.34",
+            "version": "v6.4.35",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/twig-bridge.git",
-                "reference": "5169074f4a88dfb02eeccddaba78edfdf212a9b2"
+                "reference": "352acf608d1c9c00692fc3bba9f445176c14ce0f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/twig-bridge/zipball/5169074f4a88dfb02eeccddaba78edfdf212a9b2",
-                "reference": "5169074f4a88dfb02eeccddaba78edfdf212a9b2",
+                "url": "https://api.github.com/repos/symfony/twig-bridge/zipball/352acf608d1c9c00692fc3bba9f445176c14ce0f",
+                "reference": "352acf608d1c9c00692fc3bba9f445176c14ce0f",
                 "shasum": ""
             },
             "require": {
@@ -4349,7 +4349,7 @@
             "description": "Provides integration for Twig with various Symfony components",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/twig-bridge/tree/v6.4.34"
+                "source": "https://github.com/symfony/twig-bridge/tree/v6.4.35"
             },
             "funding": [
                 {
@@ -4369,7 +4369,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-02-23T18:17:33+00:00"
+            "time": "2026-03-04T15:30:31+00:00"
         },
         {
             "name": "symfony/twig-bundle",
