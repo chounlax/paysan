@@ -6,6 +6,7 @@ use App\Repository\EpandreRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: EpandreRepository::class)]
+
 class Epandre
 {
     #[ORM\Id]
